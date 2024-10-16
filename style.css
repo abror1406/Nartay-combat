@@ -6,7 +6,6 @@ body {
     justify-content: center;
     background-color: #1e1e2f; /* Dark navy */
     overflow: hidden;
-
 }
 
 #game {
@@ -16,22 +15,22 @@ body {
 }
 
 #hamster {
-   
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #1e1e2f;
+    border: none; /* Tugmachaning chegara usuli */
 }
 
 #score {
     font-size: 30px;
     color: yellow;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .nartay-image {
     cursor: pointer;
     width: 300px;
     height: 300px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 3px solid yellow;
 }
 
@@ -47,6 +46,7 @@ body {
     color: yellow;
     gap: 10px;
 }
+
 #message {
     margin-top: 20px;
 }

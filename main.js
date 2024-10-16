@@ -2,7 +2,7 @@ let score = 0;
 
 // Local storage'da ballarni saqlash
 if (localStorage.getItem('score')) {
-    score = parseInt(localStorage.getItem('score'));
+    score = parseInt(localStorage.getItem('score'), 10);
 }
 
 document.getElementById('score').innerText = `Nartay coins: ${score}`;
@@ -39,7 +39,7 @@ document.addEventListener('touchstart', (event) => {
         message.style.display = 'block';
         setTimeout(() => {
             message.style.display = 'none';
-        }, 10000); // 2 soniyadan so'ng yashirinadi
+        }, 2000); // 2 soniyadan so'ng yashirinadi
 
         // Vibrasiya
         if (navigator.vibrate) {
@@ -47,6 +47,7 @@ document.addEventListener('touchstart', (event) => {
         }
     }
 });
+
 
 
 
