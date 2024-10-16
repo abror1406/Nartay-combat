@@ -6,47 +6,52 @@ body {
     justify-content: center;
     background-color: #1e1e2f; /* Dark navy */
     overflow: hidden;
+    font-family: Arial, sans-serif; /* O'qilishi oson bo'lishi uchun */
 }
 
 #game {
     text-align: center;
-    font-size: 50px;
-    margin-top: 100px;
+    font-size: 3vw; /* O'lchamlarni dinamik qilish */
+    margin-top: 5vw; /* Telefon ekranlariga moslashish */
 }
 
 #hamster {
     border-radius: 50%;
     background-color: #1e1e2f;
-    border: none; /* Tugmachaning chegara usuli */
+    border: none;
+    width: 80vw; /* Tugma kengligini 80% ga belgilash */
+    height: 80vw; /* Tugma balandligini 80% ga belgilash */
 }
 
 #score {
-    font-size: 30px;
+    font-size: 4vw; /* Dinamik o'lchov */
     color: yellow;
-    margin-bottom: 40px;
+    margin-bottom: 5vw;
 }
 
 .nartay-image {
     cursor: pointer;
-    width: 300px;
-    height: 300px;
+    width: 100%; /* Rasm kengligini 100% ga belgilash */
+    height: auto; /* O'z-o'zidan balandligini moslashtirish */
+    max-width: 300px; /* Maksimal kenglikni belgilash */
     border-radius: 50%;
     border: 3px solid yellow;
 }
 
 .ton {
-    width: 40px;
-    height: 40px;
+    width: 10vw; /* Rasm o'lchamlarini dinamik qilish */
+    height: 10vw;
 }
 
 .info {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 4vw; /* Dinamik o'lchov */
     color: yellow;
-    gap: 10px;
+    gap: 2vw; /* Raqamlar orasidagi bo'shliq */
 }
 
 #message {
-    margin-top: 20px;
+    margin-top: 2vw; /* Marginni telefon ekranlari uchun moslashtirish */
+    font-size: 5vw; /* Matn o'lchamini dinamik qilish */
 }
