@@ -39,7 +39,7 @@ document.addEventListener('touchstart', (event) => {
         message.style.display = 'block';
         setTimeout(() => {
             message.style.display = 'none';
-        }, 2000); // 2 soniyadan so'ng yashirinadi
+        }, 7000); // 2 soniyadan so'ng yashirinadi
 
         // Vibrasiya
         if (navigator.vibrate) {
